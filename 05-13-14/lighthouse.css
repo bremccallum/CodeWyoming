@@ -15,6 +15,10 @@ body {
 a {
     text-decoration: none;
 }
+p {
+    margin-bottom: 0;
+    padding-bottom:15px;
+}
 header {
     background: #547a81; 
     color: #faffdc;
@@ -53,6 +57,18 @@ nav li {
     list-style-type: none; 
     padding: 10px 0 10px 0;
 }
+li.active {
+    background: #faffdc;
+}
+li.active a {
+    color: #45aea8;
+}
+li:hover {
+    background: #faffdc;
+}
+li a:hover {
+    color: #45aea8;
+}
 nav a {
     color: #faffdc;
     font-size: 1.2em;
@@ -67,5 +83,11 @@ img {
     margin: 0 0 15px 15px;
 }
 footer {
-    
+    background: #547a81;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+footer p {
+    color: white;
 }
