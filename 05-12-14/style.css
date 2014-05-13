@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #c0d9dd;
+    font-family: 'Arvo' serif;
+}
+a, p, h2, footer {
+    text-decoration: none;
+    color: #444;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fff;
+}
+p {
+    line-height: 1.3; 
+    text-align: justify;
+}
+h1 {
+    text-indent: -9999px;
+    background-image: url(students-for-youth.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 40px;
+    margin-top: 0px;
+}
+img {
+    border-bottom: 15px solid #c0d9dd;
+    width: 100%;
+    height: auto;
+}
+nav {
+    float: left;
+    width: 25%;
+    min-width: 100px;
+    margin-top: -20px;
+}
+ul {
+    padding: 0 0 500px 0;
+}
+li {
+    list-style: none; 
+    padding: 15px 0 15px 10px;
+    margin-bottom: 1px;
+    background-color: #666;
+    font-size: .9em;
+}
+li a {
+    color: #fff;   
+}
+ul li:hover {
+    background-color: #416630;
+}
+li.active {
+    background-color: #416630;
+}
+li.active a {
+    color: #fff;
+}
+.rightcol {
+    width: 65%;
+    min-width: 250px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    margin-top: -5px;
+    margin-left: 25%;
+    background-color: #eee;
+}
+.rightcol img {
+    float: right;
+    width: auto;
+    border-bottom: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.date {
+    font-size: .8em;
+    margin-top: -5px;
+}
+/*
+.clear-right {
+    clear-right;   
+}
+*/
+footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    background-color: #666;
+    color: #fff;
+    font-size: .8em;
+}
+footer a {
+    color: #fff;
+}

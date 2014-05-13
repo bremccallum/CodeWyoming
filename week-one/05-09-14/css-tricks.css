@@ -1,0 +1,119 @@
+body {
+    background-color:#666;
+    font-family:'Open Sans', 'Arial', sans-serif;
+    margin: 0;
+    padding 0;
+    width: 100%;
+}
+header {
+    background-color: #161616;
+    width: 100%;
+    margin: 0 auto;
+}
+.head {
+    background-color: #161616;
+    height: 85px;
+    width: 85%;
+    margin: 0 auto;
+}
+h1 {
+    background-image: url(img/css-tricks-logo.png);
+    background-repeat: no-repeat;
+    background-position: 0 23px;
+    width: 300px;
+    text-indent: -9999px;
+    margin-top: 0;
+    padding-top: 25px;
+    display: inline-block;
+    overflow: hidden;
+}
+h1 span {
+    color: #666;
+}
+nav {
+    float: right;
+    margin-top: 30px;
+}
+nav a {
+    color: #fff;
+    font-size: .8em;
+    text-decoration: none; 
+    margin: 10px;;  
+}
+main {
+    width: 60%;
+    margin: 85px auto 50px auto;
+    padding-bottom: 25px;
+    background-color: #eeeeee;
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 10px 1px rgba(0, 0, 0, .1), 1px 1px 10px 1px rgba(0, 0, 0, .3)
+}
+.article-head {
+    width: 80%;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    font-family: 'Volkov' serif;
+    font-style: italic;
+    font-size: 5em;
+}  
+h2 span {
+     color: red;   
+}
+.article-head p {
+    font-family: monospace;
+    letter-spacing: .03em;
+    margin-bottom: 25px;
+}
+.artsicle-title {
+    background-color: #c9c9c9;
+    height: 50px;
+}
+h3 {
+    font-family: 'Volkov' serif;
+    font-style: italic;
+    font-size: 1.7em;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+.article-1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.red-square {
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.red-circle {
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+.article-content {
+    background-color: #333;
+    height: 100px;
+    font-family: monospace;
+    letter-spacing: .03em;
+    margin-bottom: 25px;
+}
+.article-content-2 {
+    background-color: #333;
+    height: 150px;
+    font-family: monospace;
+    letter-spacing: .03em;
+    margin-bottom: 25px;
+}
+.css {
+    white-space: pre;
+    color: #fff;
+}

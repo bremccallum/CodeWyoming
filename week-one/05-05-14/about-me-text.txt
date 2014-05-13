@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>About Me - Bre Skaggs</title>
+</head>
+<body>
+	<h1>About Me - Bre Skaggs</h1>
+	<h2><a href=“http://www.rivertonwy.gov/“ title=“Riverton, WY”>Hometown</a></h2>
+	<p>I grew up in Riverton, WY, a town of 10,000 people.</p>
+	<h2><a href=“http://www.coloradomesa.edu//” title=“Colorado Mesa”>College</a></h2>
+	<p>I attended Colorado Mesa University in Grand Junction, CO &amp; received a graphic design degree with an emphasis in print &amp; a studio art minor.</p>
+	<h2><a href=“http://www.jacksonholechamber.com/“ title=“Jackson Hole”>Current</a></h2>
+	<p>Currently, I do contract work for <a href=“http://tetongravity.com” title=“TGR”>Teton Gravity Research</a> in Jackson, WY. Projects includes ad design for both print &amp; web, logo design, pitch deck creation, &amp; photo editing,</p> v
+</body>
+</html>
+

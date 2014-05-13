@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>CSS Targeting</title>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+    <style>
+        body {
+            font-family: 'open sans', 'arial', sans-serif;
+            font-weight: 900;
+        }
+        main p.target {
+            color: red;
+        }   
+        header p.target {
+            color: turquoise;   
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="target">p in the header</p>
+    </header>
+    <main>
+    <p class="not-me">Not me p</p>
+    <p class="target">Target me!</p>
+    </main>
+</body>
+</html>
