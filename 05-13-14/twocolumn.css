@@ -33,6 +33,10 @@ h3 {
     border-left: 1px solid #45aea8;
     padding: 5px 5px 5px 10px;
 }
+h4 {
+    font-weight: 300;
+    font-size: .8em
+}
 li {
     list-style: none;
 }
@@ -96,7 +100,7 @@ nav.left a:hover {
 main {
     padding: 25px;
 }
-main h3, main p {
+main p {
     color: #5a5050;  
 }
 
