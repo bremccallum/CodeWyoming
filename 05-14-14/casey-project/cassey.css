@@ -134,7 +134,9 @@ article h2{
 }
 .bottom-copy{
     width:50%;
-    padding-bottom: 100px;
+    padding-right: 10px;
+    padding-bottom: 75px;
+    margin-bottom: 30px;
 }
 nav.content {
     background: #333;
@@ -176,6 +178,7 @@ footer.content {
     text-align: left;
 }
 footer p {
+    padding-top: 10px;
     float: right;  
 }
 .copyright {
