@@ -17,7 +17,9 @@
 .footer {
     background: #000;
 }
-
+.page-width {
+    min-width: 960px;
+}
 .content {
     width: 960px;
     margin:0 auto;
@@ -30,20 +32,11 @@ h1 {
     color:#eee;
 }
 h2 {
-    color:#eee;
-    font-size: .7em;
+    color:#555;
+    font-style: italic;
+    font-size: .8em;
     margin-top:0px;
     padding:0px;
-}
-h3,h4 {
-    font-style:italic;
-    color: #555;
-}
-h3 {
-    font-size:1.5em;
-    padding-bottom: 5px;
-}
-h4 {
 }
 img {
     padding:2px;
@@ -59,21 +52,27 @@ p {
 }
 a {
     text-decoration:none;
-    color:orange;
+    color: #f90;
 }
 a:hover {
     color: #555;    
 }
 li {
-    text-align:center;
-}
-header a {
-    text-decoration:none;
-    color: #eee;
     text-align: center;
 }
 header {
-    padding:15px;
+    padding: 15px;
+}
+header a {
+    text-decoration: none;
+    color: #eee;
+    text-align: center;
+}
+header a:hover {
+    color: orange;
+}
+header h2 {
+    color: #eee;
 }
 header nav ul {
     text-align:center;
@@ -102,8 +101,9 @@ article footer a{
 article footer a:hover{
     color: #555;
 }
-article h4{
-    margin: 10px 0;    
+article h2{
+    margin: 10px 0;
+    
 }
 #top-content img{
     border: none;
@@ -113,6 +113,12 @@ article h4{
 #middle-content article:nth-child(2){
     margin-left:45px;
     margin-right:45px;
+}
+#bottom-content h2 {
+    font-style: italic;
+    color: #4d4d4d;
+    font-size:1.5em;
+    padding-bottom: 5px;
 }
 #bottom-content img{
     float:right;
@@ -148,19 +154,23 @@ nav.content ul {
 }    
 nav.content li {
     list-style-type: none;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
     text-align: left;
     font-size: .7em;
     border-bottom: 1px solid #555;
 
 }    
-nav div h4 {
+nav div h2 {
     color: #fff;
     text-transform: uppercase;
+    font-size: .9em;
+    padding-bottom: 15px;
+}
+nav div a:hover {
+    color: #eee;
 }
 footer.content {
     text-align: left;
-    overflow: auto;
 }
 footer p {
     float: right;  
