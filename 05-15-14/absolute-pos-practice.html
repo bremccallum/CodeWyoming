@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Absolute Position Practice</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 100px;
+            background-color: #eee;
+        }
+        article {
+            width: 700px;
+            position: relative;
+            bottom: 1px solid rgba(0, 0, 0, .3);
+            background-color: #fff;
+        }
+        h1 {
+            height: 30px;
+            width: 200px;
+            text-align: center;
+            position: absolute;
+            z-index: 1;
+            top: -15px;
+            left: 250px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        img {
+            width: 50%;
+            float: left;
+        }
+        figcaption {
+            position: relative;
+        }
+        
+    </style>
+</head>
+<body>
+    <article>
+        <h1>My Website</h1>
+        <figure>
+            <img src="//lorempixel.com/350/400/nature" alt="">
+<!--            <figcaption><p>Some delicious food.</p></figcaption>-->
+        </figure>
+        <figure class="food-img">
+            <img src="//lorempixel.com/350/400/food" alt="">
+<!--            <figcaption><p>Nature photography.</p></figcaption>-->
+        </figure>
+    </article>
+</body>
+</html>
