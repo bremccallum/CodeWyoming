@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning Practice</title>
+    <style>
+        body {
+            background-color: #eee;
+        }
+        main {
+            width: 200px;
+            height: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            padding-top: 100px;
+            text-align: center;
+            position: relative;
+        }
+        div:first-child {
+            background-color: lightpink;
+        }
+        div:nth-child(2) {
+            background-color: lightblue;
+            right: 100px;
+            bottom: 50px;
+        }
+        div:last-child {
+            background-color: lightgreen;
+            bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>top</div>
+        <div>middle</div>
+        <div>bottom</div>
+    </main>
+</body>
+</html>
