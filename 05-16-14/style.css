@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    font-family: 'Bitter' serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+p {
+    font-size: .85em;
+    line-height: 1.4em;
+}
+
+/* ---HEADER---*/
+
+header {
+    background-image: url(img/road-bg-web.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+}
+h1 {
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 35px;
+    padding: 50px 20px;
+    float: left;
+    display: inline-block;
+    text-indent: -9999px;
+}
+header nav {
+    width: 700px;
+    float: right;
+    margin-top: 75px;
+}
+header nav ul {
+    float: right;
+}
+header nav li {
+    display: inline-block;
+    margin: 5px;
+}
+header nav li a {
+    padding: 15px;
+    color: #eee;
+}
+header nav li a:hover {
+    color: #444;
+}
+header h2{
+    padding: 290px 0 150px;
+    color: #eee;
+    text-align: center;
+}
+.header-content {
+    width: 960px;
+    margin: 0 auto;
+}
+.header-content button {
+    width: 100px;
+    margin: 0 420px 35px;
+    background-color: #eee;
+    border: none;
+}
+.header-content button:hover {
+    background-color: #555;
+}
+.header-content button a {
+    display:block;
+    padding: 15px;
+    color: #333;
+    font-family: 'Bitter' serif;
+    font-size: 1.4em;
+}
+.header-content button a:hover {
+    color: #eee;
+}
+
+/* ---MAIN--- */
+
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+article {
+    margin: 35px 0;
+    background-color: rgba(126, 210, 212, .25);
+    border-left: 5px solid #555;
+    overflow: auto;
+    position: relative;
+}
+article img {
+    float: right;
+}
+article:nth-child(even) img {
+    float: left;
+}
+article:nth-child(even) {
+    border-left: none;
+    border-right: 5px solid #555;
+}
+.article-content {
+    padding: 25px 25px 0 25px;
+    overflow: auto;
+    color: #555;
+}
+.article-content h2 {
+    margin-bottom: 15px;
+}
+article button {
+    position: absolute;
+    bottom: 25px;
+    width: 125px;
+    background-color: #555;
+    border: none;
+}
+article button:hover {
+    background-color: #333;
+}
+article button a {
+    display:block;
+    padding: 15px;
+    color: #eee;
+    font-family: 'Bitter' serif;
+    font-size: 1.4em;
+}
+article button a:hover {
+    color: #eee;
+}
+.radio-buttons {
+    width: 60px;
+}
+.radio {
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #eee;
+    border: 1px solid #555;
+}
