@@ -17,7 +17,9 @@ p {
     font-size: .85em;
     line-height: 1.4em;
 }
-
+section {
+    color: #3e3631;
+}
 /* ---HEADER---*/
 
 header {
@@ -26,6 +28,7 @@ header {
     background-position: center;
     background-size: cover;
     overflow: auto;
+    min-width: 960px;
 }
 h1 {
     background-image: url(img/logo.png);
@@ -51,14 +54,14 @@ header nav li {
 }
 header nav li a {
     padding: 15px;
-    color: #eee;
+    color: #fffdf1;
 }
 header nav li a:hover {
-    color: #444;
+    color: #3e3631;
 }
 header h2{
     padding: 290px 0 150px;
-    color: #eee;
+    color: #fffdf1;
     text-align: center;
 }
 .header-content {
@@ -68,24 +71,23 @@ header h2{
 .header-content button {
     width: 100px;
     margin: 0 420px 35px;
-    background-color: #eee;
+    background-color: #fffdf1;
     border: none;
 }
 .header-content button:hover {
-    background-color: #555;
+    background-color: #3e3631;
 }
 .header-content button a {
     display:block;
     padding: 15px;
-    color: #333;
     font-family: 'Bitter' serif;
     font-size: 1.4em;
 }
 .header-content button a:hover {
-    color: #eee;
+    color: #fffdf1;
 }
 
-/* ---MAIN--- */
+/* ---MAIN: SECTION 1 - CAMPAIGNS--- */
 
 main {
     width: 960px;
@@ -94,7 +96,7 @@ main {
 article {
     margin: 35px 0;
     background-color: rgba(126, 210, 212, .25);
-    border-left: 5px solid #555;
+    border-left: 5px solid #3e3631;
     overflow: auto;
     position: relative;
 }
@@ -106,12 +108,11 @@ article:nth-child(even) img {
 }
 article:nth-child(even) {
     border-left: none;
-    border-right: 5px solid #555;
+    border-right: 5px solid #3e3631;
 }
 .article-content {
     padding: 25px 25px 0 25px;
     overflow: auto;
-    color: #555;
 }
 .article-content h2 {
     margin-bottom: 15px;
@@ -120,7 +121,7 @@ article button {
     position: absolute;
     bottom: 25px;
     width: 125px;
-    background-color: #555;
+    background-color: #3e3631;
     border: none;
 }
 article button:hover {
@@ -129,22 +130,125 @@ article button:hover {
 article button a {
     display:block;
     padding: 15px;
-    color: #eee;
+    color: #fffdf1;
     font-family: 'Bitter' serif;
     font-size: 1.4em;
 }
 article button a:hover {
-    color: #eee;
+    color: #fffdf1;
 }
+
+/* ---COME BACK TO RADIO BUTTONS--- */
+
 .radio-buttons {
     width: 60px;
 }
 .radio {
+    position: absolute;
+    bottom: 25px;
+    right: 600px;
     width: 10px;
     height: 10px;
-    display: block;
-    margin: 10px;
     border-radius: 50%;
-    background-color: #eee;
-    border: 1px solid #555;
+    background-color: #fffdf1;
+    border: 1px solid #ccc;
+}
+.radio:nth-child(2) {
+    right: 625px;
+}
+.radio:nth-child(3) {
+    right: 650px;
+}
+article:nth-child(even) .radio{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+article:nth-child(even) .radio:nth-child(2){
+    right: 50px;
+}
+article:nth-child(even) .radio:nth-child(3) {
+    right: 75px;
+}
+/* ---MAIN: SECTION 1 - DONATE---*/
+
+.donate {
+    overflow: auto;
+}
+.form {
+    float: left;
+    width: 420px;
+    padding: 25px;
+    background-color: rgba(126, 210, 212, .25);
+    border-left: 5px solid #3e3631;
+}
+.form h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+input {
+    display: inline-block;
+    width: 250px;
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: #fefefe;
+    color: #555;
+    border: 1px solid #ccc;
+}
+.form button {
+    display: block;
+    width: 100px;
+    margin-top: 15px;
+    background-color: #3e3631;
+    border: none;
+}
+.form button:hover {
+    background-color: #333;
+}
+.form button a {
+    display:block;
+    padding: 10px;
+    color: #fffdf1;
+    font-family: 'Bitter' serif;
+    font-size: 1.4em;
+}
+.form button a:hover {
+    color: #fffdf1;
+}
+.donate .profiles {
+    width: 505px;
+    float: right;
+}
+.donate figure {
+    width: 220px;
+    position: relative;
+    background-color: rgba(126, 210, 212, .25);;
+    border-left: 5px solid #555;
+}
+.donate figure:nth-child(1) {
+    float: left;
+}
+.donate figure:nth-child(2) {
+    float: right;
+}
+.donate figure img.profile-pic {
+    position: absolute;
+    top: 25px;
+    left: -25px;
+}
+.donate figcaption {
+   padding: 25px 25px 37px 50px; 
+}  
+.donate h3 {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .8em;
+}
+.donate span {
+    font-style: italic;
+}
+.retweet img, .retweet p{
+    position: absolute;
+    bottom: -10px;
 }
