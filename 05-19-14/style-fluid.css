@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    font-family: 'Bitter', serif;
+}
+a {
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+}
+li {
+    list-style-type: none;
+}
+p {
+    font-size: .85em;
+    line-height: 1.4em;
+}
+section {
+    color: #3e3631;
+}
+.header-content, main {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 825px;
+}
+article, figure, .form, news {
+    background-color: #efefef;
+}
+/* ---HEADER---*/
+
+header {
+    background-image: url(img/road-bg-web.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+}
+h1 {
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    margin: 5% 0;
+    padding: 47px 15px;
+    float: left;
+    display: inline-block;
+    text-indent: -9999px;
+}
+header nav {
+/*    width: 75%;*/
+    float: right;
+    display: inline;
+    margin-top: 10%;
+    min-width: 645px;
+}
+header nav ul {
+    width: 95%;
+    float: right;
+}
+header nav li {
+    display: inline-block;
+    margin: 1%;
+}
+header nav li a {
+    padding: 15px;
+    color: #fffdf1;
+}
+header nav li a:hover {
+    color: #3e3631;
+}
+header h2{
+    padding: 35% 0 20%;
+    color: #fffdf1;
+    text-align: center;
+    letter-spacing: .05em;
+}
+.header-content button {
+    width: 115px;
+    margin: 0 420px 35px;
+    background-color: #fffdf1;
+    color: #3e3631;
+    border: none;
+}
+.header-content button:hover {
+    background-color: #3e3631;
+}
+.header-content button a {
+    display:block;
+    padding: 15px;
+    font-size: 1.4em;
+}
+.header-content button a:hover {
+    color: #fffdf1;
+}
+
+/* ---MAIN: SECTION 1 - CAMPAIGNS--- */
+
+article {
+    margin: 35px 0;
+    border-left: 5px solid #3e3631;
+    overflow: auto;
+    position: relative;
+}
+article img {
+    float: right;
+}
+article:nth-child(even) img {
+    float: left;
+}
+article:nth-child(even) {
+    border-left: none;
+    border-right: 5px solid #3e3631;
+}
+.article-content {
+    padding: 25px 25px 0 25px;
+    overflow: auto;
+}
+.article-content h2 {
+    margin-bottom: 15px;
+}
+article button {
+    position: absolute;
+    bottom: 25px;
+    background-color: #3e3631;
+    border: none;
+}
+article button:hover {
+    background-color: #333;
+}
+article button a {
+    display:block;
+    padding: 15px;
+    color: #fffdf1;
+    font-size: 1.4em;
+}
+article button a:hover {
+    color: #66aaa4;
+}
+.radio-buttons {
+    width: 60px;
+}
+.radio {
+    position: absolute;
+    bottom: 25px;
+    right: 600px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3e3631;
+}
+.radio:nth-child(2) {
+    right: 625px;
+}
+.radio:nth-child(3) {
+    right: 650px;
+    background-color: #66aaa4;
+}
+article:nth-child(even) .radio{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+article:nth-child(even) .radio:nth-child(2){
+    right: 50px;
+}
+article:nth-child(even) .radio:nth-child(3) {
+    right: 75px;
+}
+/* ---MAIN: SECTION 2 - DONATE---*/
+
+.form, .donate figure {
+        border-left: 5px solid #3e3631;
+}
+.donate {
+    overflow: auto;
+}
+.form {
+    float: left;
+    width: 40%;
+    height: 20em;
+    padding: 25px;
+}
+.form h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+input {
+    display: inline-block;
+    width: 65%;
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: #fefefe;
+    color: #555;
+    border: 1px solid #ccc;
+}
+.form button {
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    background-color: #3e3631;
+    border: none;
+}
+.form button:hover {
+    background-color: #333;
+}
+.form button a {
+    display:block;
+    padding: 10px;
+    color: #fffdf1;
+    font-size: 1.4em;
+}
+.form button a:hover {
+    color: #66aaa4;
+}
+.donate .profiles {
+    width: 60%;
+    float: right;
+}
+.donate figure {
+    width: 40%;
+    height: 20em;
+    position: relative;
+}
+.donate figure:nth-child(1) {
+    float: left;
+    margin-left: 55px;
+}
+.donate figure:nth-child(2) {
+    float: right;
+}
+.donate figure img.profile-pic {
+    position: absolute;
+    top: 25px;
+    left: -25px;
+}
+.donate figcaption {
+   padding: 25px 25px 67px 50px; 
+}  
+.donate time {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .8em;
+}
+.donate span, .retweet p {
+    font-style: italic;
+}
+.retweet img, .retweet p{
+    position: absolute;
+    bottom: 20px;
+}
+.retweet p {
+    margin-left: 30px;
+}
+.profiles .radio {
+    right: 25px;
+}
+
+/* ---MAIN: SECTION 3 - NEWS---*/
+
+.news {
+    position: relative;
+    margin: 40px 0px 35px;
+    padding: 35px 0 335px;
+    border-top: 5px solid #3e3631;
+    border-bottom: 5px solid #3e3631;
+}
+.news h2 {
+    position:absolute;
+    top: -30px;
+    left: 40%;
+    width: 15%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+.news figure {
+    width: 30%;
+    float: left;
+}
+.news figure:nth-child(3) {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.news img {
+    width: 100%;
+    border-bottom: 5px solid #3e3631;
+}
+.news figcaption {
+    padding: 15px;
+    font-size: .8em;
+}
+.news h3 {
+    margin-bottom: 10px;
+}
+.news a {
+    position: relative;
+    left: 75%;
+    color: #3e3631;
+    font-size: .9em;
+}
+.news a:hover {
+    color: #66aaa4;
+}
+
+/* ---MAIN: FOOTER--- */
+
+.footer-info {
+    overflow: auto;
+}
+.footer-info img.foot-logo, .footer-info nav div{
+    float: left;
+}
+img.foot-logo {
+    margin: 0 35px 35px 0;
+}
+.footer-info nav {
+    overflow: auto;
+    width: 45%;
+    margin: 0 45px;
+}
+.footer-info nav div.more-links {
+    margin: 0 10%;
+}
+.footer-info h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.footer-info li {
+    margin: 5px 0;
+}
+.footer-info a {
+    font-size: .8em;
+    color: #3e3631;
+}
+.footer-info a:hover {
+    color: #66aaa4;
+}
+.footer-info p {
+    
+    float: right;
+}
+.social a {
+    margin-right: 15px;
+}
