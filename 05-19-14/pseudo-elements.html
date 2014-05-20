@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Elements</title>
+    <style>
+    .floater {
+        float: left;
+        height: 50px;
+        width: 50px;
+        background-color: darkred;
+    }
+    .clearfix {
+        clear: both;
+        width: 65px;
+        background-color: #444;
+    }
+    .clearfix::after {
+        display: block;
+        content: " ";
+        clear: both;
+    }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="floater"></div>
+        <div class="floater"></div>
+    </div>
+</body>
+</html>

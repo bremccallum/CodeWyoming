@@ -37,6 +37,7 @@ header {
     background-position: center;
     background-size: cover;
     overflow: auto;
+    min-width: 825px;
 }
 h1 {
     background-image: url(img/logo.png);
@@ -50,12 +51,11 @@ h1 {
 header nav {
 /*    width: 75%;*/
     float: right;
-    display: inline;
     margin-top: 10%;
     min-width: 645px;
 }
 header nav ul {
-    width: 95%;
+    width: 500px;
     float: right;
 }
 header nav li {
@@ -178,7 +178,7 @@ article:nth-child(even) .radio:nth-child(3) {
 .form {
     float: left;
     width: 40%;
-    height: 20em;
+    height: 21em;
     padding: 25px;
 }
 .form h3 {
@@ -219,7 +219,7 @@ input {
 }
 .donate figure {
     width: 40%;
-    height: 20em;
+    height: 21em;
     position: relative;
 }
 .donate figure:nth-child(1) {
