@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Practice</title>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arvo', sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            transition: all 2s;
+        }
+        table:hover {
+            -webkit-transform: rotate(1080deg) scale(2, 2) translate(100px, 200px);
+        }
+        caption {
+            padding: 15px;
+            color: #969;
+            font-weight:700;
+            letter-spacing: .02em; 
+        }
+        thead th {
+            padding: 15px;
+            color: #969;
+            background-color: #ddd;
+            border: 3px solid #ddd;
+
+        }
+        td {
+            padding: 15px;
+            text-align: center;
+            color: #ddd;
+            background-color: #969;
+            border: 3px solid #ddd;
+        }
+        table caption {
+            padding: ;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Code Wyoming 2014 Class Info</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Hometown</th>
+                <th>Fav Color</th>
+                <th>Second Fav Color</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Matt</td>
+                <td>Cheyenne</td>
+                <td colspan="2">Green</td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>Chicago</td>
+                <td>Blue</td>
+                <td>Black</td>
+            </tr>
+            <tr>
+                <td>Bre</td>
+                <td>Riverton</td>
+                <td>Green</td>
+                <td>Orange</td>
+            </tr>
+            <tr>
+                <td>Susan</td>
+                <td>Seattle</td>
+                <td colspan="2">White</td>
+            </tr>
+            <tr>
+                <td>Dave</td>
+                <td>Buttalo</td>
+                <td>Fuchsia</td>
+                <td>Aquamarine</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

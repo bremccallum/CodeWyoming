@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+    
+    <style>
+        div {
+            background-color: #800;
+            height: 100px;
+            width: 100px;
+        }
+        .oscillate {
+            -webkit-animation: oscillate 1s infinite;
+        }
+        @-webkit-keyframes oscillate{
+            0%, 60%, 99% {
+                -webkit-transform: scale(1);
+            }
+            25% {
+                -webkit-transform: scale(1.1);
+            }
+            75% {
+                -webkit-transform: scale(.9);
+            }
+            }
+
+        .jumper {
+            margin-top: 100px;
+            background-color: #93c;
+            -webkit-transform-origin: 300px center;
+            -webkit-animation: fish 4s infinite;
+        }
+        @-webkit-keyframes fish {
+            from {
+                -webkit-transform: rotate(0);
+            }
+            to {
+                -webkit-transform: rotate(180deg);
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="oscillate">
+        
+    </div>
+    <div class="jumper"></div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=no">
+    <title>Hamburger Button Tutorial</title>
+     
+     <!--Using jQuery and jQuery UI for display effects-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+ 
+    <!--Using the hamburger menu display code-->
+    <script src="js/hamburger.js"></script>
+
+    <style>
+        body {
+            overflow-x:hidden;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+        #hamburger {
+            border: 1px solid #374c77;
+            border-radius: 3px;
+            cursor: pointer;
+            display: block;
+            height: 24px;
+            padding: 3px 4px 3px;
+            position: relative;
+            width: 25px;
+            background: #4569b2;
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#4569b2), to(#4062a5));
+            background: -webkit-linear-gradient(#4569b2 0%, #4062a5 100%);
+            background: -moz-linear-gradient(#4569b2 0%, #4062a5 100%);
+            background: -o-linear-gradient(#4569b2 0%, #4062a5 100%);
+            background: linear-gradient(#4569b2 0%, #4062a5 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4569b2', endColorstr='#4062a5',GradientType=0 );
+        }
+            /*The white stripes in the hamburger button */
+        #hamburger div {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 2px;
+            margin-top: 3px;
+            width: 90%;
+        }
+        nav {
+            left: 0px;
+            top: 0px;
+            position: fixed;
+            z-index: 0;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="">List Link 1</a></li>
+            <li><a href="">List Link 2</a></li>
+            <li><a href="">List Link 3</a></li>
+            <li><a href="">List Link 4</a></li>
+            <li><a href="">List Link 5</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content-layer"></div>
+    </div>
+    
+
+</body>
+</html>
