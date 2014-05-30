@@ -1,0 +1,17 @@
+@primary-color: #fee;
+
+p {
+    color: @primary-color;
+}
+
+.content {
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+}
+header {
+    &:extend(.content);
+}
+main {
+    &:extend(.content);
+}
