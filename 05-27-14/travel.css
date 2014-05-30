@@ -23,6 +23,7 @@ h1 {
 }
 p {
     color: #094949;
+    font-size: .93em;
 }
 
 /* ---HEADER STYLES--- */
@@ -64,37 +65,78 @@ h2.tagline {
 .article-section article {
     margin-top: 35px;
 }
+.article-section .bg-color {
+    background-color: rgba(244, 255, 197, .4);
+}
+.article-section img {
+    padding: 0;
+    border-bottom: 5px solid #094949;
+}
+.article-section h3 {
+    padding: 15px 0 10px;
+    margin: 0;
+    color: #094949;
+}
+.article-section p {
+    padding: 0 0 15px;
+    letter-spacing: ;
+    color: #094949;
+}
 
 /* ---MORE INFO SECTION STYLES--- */
 
-.more-info-section {
-    padding-bottom: 25px;
+.more-info-bg {
+    padding-bottom: 35px;
     margin-bottom: 35px;
+    background-color: rgba(244, 255, 197, .4);
     border-top: 5px solid #094949;
     border-bottom: 5px solid #094949;
 }
-
 .more-info-section h2 {
     padding: 10px 0 25px;
     font-size: 2.5em;
     text-align: center;
+}
+.more-info-section h3 {
+    padding-bottom: 5px;
 }
 .featured h4 {
     padding-left: 10px;
     border-left: 2px solid #094949;
 }
 
+/* ---FOOTER--- */
+
+.footer-bg {
+    background-color: #094949;
+}
+footer.row {
+    padding: 25px;
+}
+footer p {
+    margin: 0;
+    color: #f4ffc5;
+}
+
+/* ---MEDIA QUERIES---*/
+
 @media only screen and (max-width: 768px) {
     nav ul li {
     display: none;
+    }
+    nav ul::before {
+        content: "Menu";
+        font-family: 'Roboto Condensed', sans-serif;
+        background-color: #094949;
+        border-radius: 10%;
+        margin: 5px;
+        padding: 10px 20px;
+        color: #f4ffc5;
+    }
 }
-nav ul::before {
-    content: "Menu";
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #094949;
-    border-radius: 10%;
-    margin: 5px;
-    padding: 10px 20px;
-    color: #f4ffc5;
-}
+@media only screen and (min-width: 992px) {
+    .article-section img {
+        border-bottom: none;
+        border-left: 5px solid #094949;
+    }
 }
