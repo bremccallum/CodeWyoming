@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Practice</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    
+    <style>
+        body {
+            font-family: 'Ubuntu' sans-serif;
+        }
+        button {
+            background-color: #555;
+            border: none;
+            padding: 15px;
+            color: #eee;
+            font-size: 1.2em;
+        }
+        .highlight-even {
+            background-color: #aaa;
+            color: #eee;
+        }
+        .highlight-odd {
+            background-color: #eee;
+            color: #555;
+        }
+        ul {
+            margin-left: -40px;
+        }
+        li {
+            display: inline-block;
+            list-style-type: none;
+            margin: 20px;
+        }
+        li a {
+            padding: 10px 25px;
+            color: #555;
+            text-decoration: none;
+        }
+    </style>
+    
+</head>
+<body>
+  
+    <button id="even">Highlight Even</button>
+    <button id="odd">Hightlight Odd</button>
+    <ul class="list">
+        <li><a href="">List Item 1</a></li>
+        <li><a href="">List Item 2</a></li>
+        <li><a href="">List Item 3</a></li>
+        <li><a href="">List Item 4</a></li>
+        <li><a href="">List Item 5</a></li>
+        <li><a href="">List Item 6</a></li>
+        <li><a href="">List Item 7</a></li>
+        <li><a href="">List Item 8</a></li>
+        <li><a href="">List Item 9</a></li>
+        <li><a href="">List Item 10</a></li>
+    </ul>
+    
+    <script src="/jquery/jquery-2.1.1.js"></script>
+    <script>
+        // highlight evens
+        var targetEven = $('li:nth-child(even) a');
+        var buttonEven = $('button#even');
+        var toggleHighlight = function() {
+            targetEven.addClass('highlight-even');
+            targetOdd.removeClass('highlight-odd');
+        }
+        buttonEven.click(toggleHighlight);
+        
+        // highlight odds
+        var targetOdd = $('li:nth-child(odd) a');
+        var buttonOdd = $('button#odd');
+        var toggleHighlight = function() {
+            targetOdd.addClass('highlight-odd');
+            targetEven.removeClass('highlight-even');
+        }
+        buttonOdd.click(toggleHighlight);
+        
+        if(targetOdd.hasClass('highlight-odd')) {
+            targetEven.removeClass('hightlight-even');
+        }
+    </script>
+</body>
+</html>

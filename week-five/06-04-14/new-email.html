@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+</head>
+<body>
+    <button>Click Here!</button>
+    
+    <script src="/jquery/jquery-2.1.1.js"></script>
+    <script>
+        var title = $('title');
+        var updateUnread = function (numUnread) {
+            title.text(numUnread + ' Email');
+        }
+        var button = $('button');
+        var numEmails = 0;
+        button.click(function () {
+            numEmails = numEmails + 1;
+            title.text(numEmails + ' Email');
+        });
+//        var oldText = title.text();
+//        title.text(oldText + ' | Title was successfully changed!');
+    </script>
+</body>
+</html>

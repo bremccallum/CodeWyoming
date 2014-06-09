@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pocket jQuery</title>
+    
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    
+    <style>
+        body {
+            background-color: #ccc;
+        }
+        header {
+            width: 87.5%;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 6.25%;
+            background-color: #ccc;
+            transition: box-shadow .2s;
+        }
+        .header-scrolled {
+            box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
+        }
+        main {
+            width: 85%;
+            padding: 35px;
+            margin: 100px auto 0;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header id="fixed-header">
+        <h1 class="text-center">My Site</h1>
+    </header>
+    <main>
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, odio, praesentium, voluptas atque expedita quis est sint voluptatum at dolorum laborum minus enim modi aut culpa nam veritatis quo laboriosam repudiandae amet accusantium nemo nesciunt inventore itaque incidunt a illo consequuntur consequatur officiis error ratione magnam mollitia quos dolore impedit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quaerat, quibusdam quae magnam voluptates cupiditate accusamus quas fuga ipsum aperiam commodi ipsam fugiat dolore ad impedit eveniet aspernatur? Architecto, iste, incidunt, rem, doloribus minus cumque provident saepe culpa rerum laboriosam blanditiis nesciunt similique voluptate debitis assumenda illum corrupti neque! Enim, optio, asperiores, earum tempora culpa eligendi laborum dolorum accusamus ducimus sed omnis quisquam nisi et quibusdam nulla excepturi incidunt? Quaerat, voluptatem facere pariatur cumque. Maiores!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, deserunt, provident assumenda ut voluptatibus facere nemo nobis maiores natus quasi commodi temporibus fugit accusantium ab totam. Quidem, earum accusantium dolor eveniet eligendi iusto eum neque harum. In ea molestiae excepturi earum iure accusamus dolor amet hic quisquam illo! Rem, ut distinctio laboriosam explicabo itaque ex consectetur expedita facere pariatur amet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, recusandae, tempore est enim aperiam accusantium doloribus cumque esse sapiente id maiores aliquam cupiditate ratione iusto repellendus maxime at harum ex possimus sed quibusdam blanditiis ad fugit explicabo quasi. Nulla, molestias, explicabo, corrupti quae animi modi quas esse quaerat ratione itaque cumque eveniet sunt saepe facilis aut nisi enim. Quia, dolor, iusto illum quisquam quibusdam qui aperiam harum eveniet autem blanditiis nobis accusamus ullam quam officiis esse minus ipsum itaque quos veniam at nemo ea eaque eligendi voluptas eum necessitatibus voluptatem enim. Asperiores, odit laudantium suscipit excepturi beatae dignissimos eos sunt est. Numquam, molestias nemo ullam tempore vel ex consequatur eos. Nihil, cum suscipit dicta exercitationem corrupti pariatur soluta ipsum dolore ab recusandae! Velit, quae, ab cum sunt delectus rerum quod. Doloremque, illum, pariatur fugiat impedit quis magnam culpa voluptates quia eaque ab nostrum libero amet accusamus voluptas numquam. Eius, dolorem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, eius, laboriosam, sunt officia quidem autem at nostrum fuga et numquam atque ullam doloremque eos cupiditate voluptas amet totam necessitatibus error. Dolores possimus earum doloribus expedita vero. Ipsa, accusantium ea alias ipsum? Aspernatur, harum, illum, corporis pariatur ullam dignissimos officiis ipsum error veniam molestias veritatis voluptas voluptatum debitis nobis quae provident ex iure at velit minima nam distinctio nisi saepe vero sed earum quas accusantium voluptate ut dolor! Incidunt, ratione, aperiam delectus beatae quis labore cumque iste at atque nesciunt commodi adipisci cupiditate laudantium! Debitis, ullam, quasi, autem, perferendis pariatur corporis vitae atque sunt quam delectus corrupti itaque. Esse, accusamus, asperiores dolore quo vero libero quae nisi perspiciatis quos dicta accusantium modi sed blanditiis amet id repellat soluta aut. Vel, ducimus, aperiam dolorem alias culpa repellat eos distinctio nostrum laboriosam perferendis. Excepturi, temporibus, ex placeat commodi fuga soluta voluptatum minus illo dolores facere earum quaerat esse magnam tempora numquam ab aliquid harum eveniet dignissimos obcaecati corporis impedit accusantium cupiditate animi quia veniam rerum maxime dicta pariatur. Nemo, inventore nisi ipsam unde reiciendis quo facere! Corporis, tempore ipsam tenetur a quidem cum fugit voluptatibus adipisci quo perferendis enim veniam optio veritatis quis!</p>
+    </main>
+    
+    <script src="/jquery/jquery-2.1.1.js"></script>
+    <script>
+        var header = $('#fixed-header');
+        var scrollDistance = $(window).scrollTop();
+        if(scrollDistance){
+            header.addClass('header-scrolled');
+        }else {
+            header.removeClass('header-scrolled');
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In jQuery Practice</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Raleway', sans-serif;
+            background-color: #222;
+        }
+        a {
+            text-decoration: none;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        input {
+            border: none;
+            background-color: #444;
+            color: #aaa;
+            line-height: 40px;
+            width: 200px;
+            font-family: 'Raleway', sans-serif;
+        }
+        input#email-input {
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+        }
+        input#password-input {
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        button {
+            /*positioning and stuff*/
+            margin-left: 10px;
+            width: 90px;
+            margin-left: 10px;
+            line-height: 40px;
+            
+            /*making it pretty*/
+            border: none;
+            border-radius: 3px;
+            background-color: #369ac6 ;
+            color: #eee;
+            
+            /*letter beautification*/
+            font-family:  'Raleway', sans-serif;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            
+        }
+        a.forget-password {
+            display: block;
+            width: 130px;
+            padding-top: 10px;
+            font-size: .9em;
+            color: #444;
+        }
+        .glyphicon-envelope input{
+            padding-left: 35px;
+        }
+        .glyphicon-envelope:before{
+            color: #aaa;
+            height: 100%;
+            width: 35px;
+            display:-webkit-box;
+            -webkit-box-pack:center;
+            -webkit-box-align:center;
+            position: absolute;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .glyphicon-lock input{
+            padding-left: 35px;
+        }
+        .glyphicon-lock:before{
+            color: #aaa;
+            height:100%;
+            width:35px;
+            display:-webkit-box;
+            -webkit-box-pack:center;
+            -webkit-box-align:center;
+            position: absolute;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .alert {
+            width: 200px;
+            position: absolute;
+            bottom: 35px;
+            left: 35px;
+            background-color: #c13838;
+            color: #ccc;
+            border-radius: 0;
+        }
+        .congrats {
+            width: 200px;
+            padding: 10px;
+            position: absolute;
+            bottom: 35px;
+            left: 35px;
+            background-color: #37af73;
+            color: #ccc;
+            border-radius: 0;
+        }
+        .congrats-red {
+            background-color: #c13838;
+        }
+        </style>
+    
+</head>
+<body>
+
+<!--login inputs/button-->
+    <div class="login">
+        <span class="glyphicon glyphicon-envelope">
+           <input id="email-input" type="text" placeholder="email@address.com">
+        </span>        
+        <span class="glyphicon glyphicon-lock">
+           <input id="password-input" type="password" placeholder="***********">
+        </span>        
+        <button>Sign In</button>
+        <a class="forget-password" href="#">Forgotten password?</a>
+    </div>
+    
+<!--alert-->
+    <div class="alert hidden">
+        <p>Invalid email address.</p>
+    </div>
+    
+<!--congrats-->    
+    <div class="congrats hidden">
+        <p>Invalid password.</p>
+    </div>
+    
+<!--start scripts-->
+    <script src="/jquery/jquery-2.1.1.js"></script>
+    <script>
+        var warnUser = function (message) {
+        $('div.alert').text(message).removeClass('hidden');
+        },
+        
+        congradulateUser = function(message) {
+        $('div.congrats').text(message).removeClass('hidden')
+        }
+        
+        var login = function () {
+            //make sure there's an email
+            var email = $('#email-input').val();
+            var password = $('#password-input').val();
+                        
+            if (!email) { //if email is undefined, null, empty string '!' is read as 'not', so "if not email..."
+                warnUser("Don't forget your email!!");
+                return; //bail bro.
+        }
+            //They gave us an email.
+            //Make sure it's a registered user. (make sure it's your email)
+            if(email !== 'breanneskaggs@gmail.com') {
+                warnUser('Unknown email...try again!');
+                return;
+            }
+            
+            if(password === 'password') {
+                congradulateUser('You have successfully logged in!');
+            }
+            else {
+                warnUser('Sorry, that password is incorrect').addClass('.congrats-red');
+            }
+        };
+        
+        $('button').click(login); 
+    </script>
+</body>
+</html>

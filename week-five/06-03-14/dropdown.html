@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown jQuery</title>
+    
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    
+    <style>
+        nav {
+            margin-top: 35px;
+        }
+        nav>ul>li {
+            position: relative;
+            display: inline-block;
+            border-right: 3px solid #eee;
+        }
+        nav>ul>li:last-child {
+            border: none;
+        }
+        nav>ul>li {
+            margin: -2px;
+            padding: 20px;
+            background-color: #34a0b0;
+            color: #eee;
+        }
+        nav>ul>li:hover {
+            background-color: #2c8c93;
+        }
+        nav ul ul {
+            position: absolute;
+            padding: 0;
+            top: 100%;
+            left: 0%;        
+        }
+        nav ul ul>li {
+            list-style: none;
+            width: 145px;
+            padding: 10px;
+            border-bottom: 1px solid #34a0b0;
+            background-color: #eee;
+            color: #34a0b0;
+        }
+        nav ul ul>li:last-child {
+            border: none;
+        }
+        nav ul ul>li:hover {
+            background-color: #ccc;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>List Item</li>
+            <li id="drop-button">Dropdown
+                <ul id="dropdown" class="hidden">
+                    <li>Dropdown 1</li>
+                    <li>Dropdown 2</li>
+                    <li>Dropdown 3</li>
+                    <li>Dropdown 4</li>
+                </ul>
+            </li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+    </nav>
+    <script src="/jquery/jquery-2.1.1.js"></script>
+    <script>
+        var dropButton = $('#drop-button');
+        var dropDown = $('#dropdown');
+        var toggleDrop = function() {
+            dropDown.toggleClass('hidden');
+        }
+        dropButton.click(toggleDrop);
+    </script>
+</body>
+</html>

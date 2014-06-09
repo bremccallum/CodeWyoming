@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    
+       <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+        
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Bree Serif', serif;
+            color: #333;
+        }
+        body {
+            background-image: url(mooning.png);
+            text-align: left;
+            height: 100vh;
+            width: 100%;
+        }
+        div.container {
+
+            width: 75%;
+            padding: 35px;
+            margin: 35px auto;
+            flex-direction: column;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background-color: #eee;
+        }
+        label {
+            margin: 15px 0;
+            display: block;
+        }
+        input {
+            width: 100%;
+            display: block;
+        }
+        textarea {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        input, textarea {
+            line-height: 3em;
+            font-size: 1.1em;
+            color: #33a0b0;
+            padding-left: 10px;
+            border: 2px solid #555;
+            margin-bottom: 0px;
+        }
+        label input.check {
+            width: 15px;
+            display: none;
+        }
+        label.checkbox {
+            cursor: pointer;
+        }
+        span.checkbox {
+            display: inline-block;
+            position: relative;
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+            background-color: #fff;
+            border: 2px solid #555;
+        }
+        input:checked + span.checkbox {
+            background-image: url(/06-09-14/checked.png);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Fill out this form so we can be friends!</h1>
+        <!--name, email, message-->
+        <label for="Name">Name 
+            <input type="text" name="name" placeholder="John Smith">
+        </label>
+        <label for="Email">Email 
+            <input type="email" name="email" placeholder="example@email.com">
+        </label>
+        <label for="Message">Message 
+        <textarea type="text" name="message" placeholder="Enter message here."></textarea>
+        </label>
+        
+        <label class="checkbox">
+            <input class="check" type="checkbox"> 
+            <span class="checkbox"></span>
+            Subscribe for my weekly newsletter!
+        </label>
+    </div>
+</body>
+</html>

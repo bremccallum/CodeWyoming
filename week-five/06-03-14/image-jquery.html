@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image jQuery</title>
+    
+    <style>
+        img {
+            transition: all 2s;
+        }
+        .img-circle {
+            border-radius: 50%;
+            opacity: .5;
+        }
+    </style>
+    
+</head>
+<body>
+    <img id="image" src="//lorempixel.com/300/300/abstract/7" alt="">
+    
+    <script src="/jquery/jquery-2.1.1.js"></script>
+    <script>
+        var targetImg = $('img');
+        var toggleRounded = function() {
+            targetImg.toggleClass('img-circle');
+        }
+        targetImg.click(toggleRounded);
+    </script>
+</body>
+</html>

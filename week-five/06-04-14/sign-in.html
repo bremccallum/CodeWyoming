@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In jQuery Practice</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Raleway', sans-serif;
+            background-color: #222;
+        }
+        a {
+            text-decoration: none;
+        }
+        input {
+            border: none;
+            background-color: #444;
+            line-height: 40px;
+            width: 200px;
+        }
+        input#email-input {
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+        }
+        input#password-input {
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        button {
+            /*positioning and stuff*/
+            margin-left: 10px;
+            width: 90px;
+            margin-left: 10px;
+            line-height: 40px;
+            
+            /*making it pretty*/
+            border: none;
+            border-radius: 3px;
+            background-color: #369ac6 ;
+            color: #eee;
+            
+            /*letter beautification*/
+            font-family:  'Raleway', sans-serif;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            
+        }
+        a.forget-password {
+            display: block;
+            width: 130px;
+            padding-top: 10px;
+            font-size: .9em;
+            color: #444;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="login">
+        <input id="email-input" type="text" src=">
+        <input id="password-input" type="password">
+        <button>Sign In</button>
+        <a class="forget-password" href="#">Forgotten password?</a>
+    </div>
+    
+    <script src="/jquery/jquery-2.1.1.js"></script>
+    <script>
+    
+    </script>
+</body>
+</html>

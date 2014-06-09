@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Practice</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    
+    <style>
+        body {
+            font-family: 'Ubuntu' sans-serif;
+            
+        }
+        div {
+            background-color: #ff7895;
+            height: 100vh;
+            transition: opacity 2s;        }
+        button {
+            padding: 15px;
+            color: #ccc;
+            background-color: #555;
+            border: 2px solid #ccc;
+        }
+        .faded {
+            opacity: 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <button>
+        Here is my button
+    </button>
+    <div id="target"></div>
+    
+    <script src="/jquery/jquery-2.1.1.js"></script>
+    <script>
+        var button = $('button');
+        var toggleFaded = function() {
+            $('#target').toggleClass('faded');
+        }
+        button.click(toggleFaded);
+    </script>
+</body>
+</html>

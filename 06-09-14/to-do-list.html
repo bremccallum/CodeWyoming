@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    
+<!--    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">-->
+       
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>        
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #e1edbf;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        header {
+            background-image: url(/06-09-14/tweed.png);
+            background-color: #fff;
+            padding: 35px;
+            border-bottom: 5px solid #b2d455;
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3em;
+            color: #e1edbf;
+        }
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+        
+        /*---Input Styes*/
+        input.todo {
+            width: 100%;
+            height: 75px;
+            border: 1px solid #b2d455;
+            padding: 25px;
+            font-size: 1.2em;
+            font-family: 'fjalla one', sans-serif;
+        }
+        
+        /*----ul Styles---*/
+        ul {
+            background-color: #fff;
+        }
+        li {
+            padding: 25px;
+            list-style-type: none;
+            color: #524542;
+            font-size: 1.2em;
+            border: 1px solid #b2d455;
+            border-top: none;
+        }
+        
+        /*----Checkbox Styles---*/
+        label input.check {
+            width: 15px;
+            display: none;
+        }
+        label.checkbox {
+            cursor: pointer;
+        }
+        span.checkbox {
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            background-color: #fff;
+            background-image: url(/06-09-14/checked-2.png);
+        }
+        input:checked + span.checkbox {
+            background: url(/06-09-14/checked-transparent.png);
+        }
+        
+        /*---Delete Button Styles---*/
+        button {
+            display: none;
+            width: 20px;
+            height: 20px;
+            float: right;
+            border: none;
+            background-image: url(/06-09-14/delete.png);
+            
+        }
+        button:hover {
+ 
+        }
+        li:hover button.delete {                                     display: inline-block;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1>To-Dos</h1>
+        </header>
+    <div class="container">
+        <input class="todo" type="text" placeholder="What needs to be done?">
+        <ul>
+            <li>
+                <div>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <span class="checkbox"></span>
+                        Checklist 1
+                    </label>
+                    <button class="delete"></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <span class="checkbox"></span>
+                        Checklist 2
+                    </label>
+                    <button class="delete"></button>
+
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <span class="checkbox"></span>
+                        Checklist 3
+                    </label>
+                    <button class="delete"></button>
+
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <span class="checkbox"></span>
+                        Checklist 4
+                    </label>
+                    <button class="delete"></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
