@@ -1,0 +1,182 @@
+/*
+Theme Name: Dream Home Practice Site
+Theme URI: 
+Author: Bre Skaggs
+Author URI: 
+Description: 
+*/
+
+@import "bs/bootstrap.css";
+
+/* ---Generic Syles--- */
+
+body {
+    font-family:  'ubuntu';
+    min-width: 400px;
+}
+h1 {
+    width: 233px;
+    height: 33px;
+    margin-top: 0;
+    margin-left: 0;
+    background-image: url(img/logo-red.png);
+    text-indent: -9999px;
+}
+h2 {
+    font-weight: 700;
+    letter-spacing: .025em;
+}
+a:hover {
+    text-decoration: none;
+}
+/* ---Header--- */
+
+header {
+    padding: 35px;
+    background-color: #282828;
+    border-bottom: 2px solid #444;
+}
+nav.navbar {
+    border: none;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border-color: #666;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:visited {
+    background-color: #555;
+}
+.navbar-default .navbar-collapse {
+    border: none;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #f04b11;
+}
+.navbar-toggle {
+    margin-right: 0;
+}
+.navbar-brand {
+    padding: 0;
+}
+.navbar-brand h2 {
+    font-size: .6em;
+    margin-top: -8px;
+    text-transform: uppercase;
+}
+.nav > li > a {
+    padding: 15px 10px ;    
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;
+    color: #f04b11;
+}
+.open > .dropdown-menu {
+    background-color: #444;
+    padding: 0;
+}
+.open > .dropdown-menu a {
+    color: #fff;
+}
+.dropdown-menu > li > a {
+    padding: 10px;
+}
+button {
+    border-color: #333;
+}
+button.btn-styles:hover {
+    background-color: #333;
+}
+
+/* ---Slider---*/
+
+.slider {
+    background-image: url(img/bg-slider.jpg);
+}
+.slider-content {
+    margin: 35px 0;
+}
+div.carousel {
+    padding: 0;
+}
+.carousel-inner a.btn {
+    background-color: #f04b11;
+    color: #fff;
+    border: none;
+}
+.carousel-caption a.btn:hover {
+    background-color: #d93400;
+}
+
+/*---Sidebar---*/
+
+.sidebar-buttons {
+    padding: 0;
+}
+.sidebar-buttons > a {
+    display: block;
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    background-color: #474747;
+    color: #fff;
+}
+.sidebar-buttons > a:hover {
+    background-color: #707070;
+}
+.sidebar-buttons > img {
+    
+}
+.ideas-button {
+    border-top: 1px solid #333;
+}
+
+/*---___Main___---*/
+
+/*---Tips---*/
+
+main > section.red-tips-row {
+    background-color: #ef4c22;  
+    border-top: 10px solid #b22d22;
+}
+.tips article {
+    color: #fff;
+    margin-bottom: 20px;
+} 
+.tips article a {
+    color: #b22d22;
+}
+.tips article a:hover {
+    color: #fff;
+}
+article > div.tips-caption {
+    margin-left: 80px;
+}
+.tips article .tips-caption > h2 {
+    margin-bottom: 3px;
+    font-size: 1.4em;  
+    text-transform: uppercase;
+}
+.tips article .tips-caption > p {
+    margin-bottom: 0;
+}
+.tips article > img {
+    margin-top: 20px;
+}
+
+/*---Media Queries---*/
+
+@media only screen and (max-width: 605px) {
+    .carousel-caption > p {
+        display: none;
+    }
+    .carousel-caption > h2 {
+        
+    }
+}
