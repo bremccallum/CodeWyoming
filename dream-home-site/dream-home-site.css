@@ -8,8 +8,8 @@ body {
 
 header {
     padding: 35px;
-    background-color: #333;
-    border-bottom: 2px solid #555;
+    background-color: #282828;
+    border-bottom: 2px solid #444;
 }
 nav.navbar {
     width: 85%;
@@ -19,7 +19,7 @@ nav.navbar {
     background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-    margin-top: 25px;
+/*    margin-top: 25px;*/
     border-color: #666;
 }
 .navbar-default .navbar-toggle:hover,
@@ -29,24 +29,38 @@ nav.navbar {
 }
 .navbar-default .navbar-collapse {
     border: none;
+    width: 350px;
 }
 .navbar-default .navbar-nav > li > a:hover {
     color: #ea4f5f;
 }
+.navbar-toggle {
+    margin-right: 0;
+}
+.navbar-nav {
+    margin-top: 25px;
+}
 div.container {
-    display: inline;
+    padding: 0;
 }
 h1 {
     width: 233px;
     height: 33px;
     margin-top: 0;
+    margin-left: 0;
     background-image: url(/dream-home-site/img/logo.png);
     text-indent: -9999px;
+}
+.navbar-brand {
+    padding: 0;
 }
 .navbar-brand h2 {
     font-size: .6em;
     margin-top: -8px;
     text-transform: uppercase;
+}
+.nav > li > a {
+    padding: 15px 10px ;    
 }
 button {
     border-color: #333;
@@ -59,21 +73,14 @@ button.btn-styles:hover {
 
 .slider {
     width: 100%;
-    margin-top: 0;
-    background-image: url(/dream-home-site/img/overlay.png);
+    margin: 0;
+    background-image: url(img/bg-slider.jpg);
 }
-.slider-wrapper {
+.slider-content {
     width: 85%;
     margin: 0 auto;
 }
 div.carousel {
-    margin: 0;
-    padding: 35px 0;
-}
-
-/* ---Carousel--- */
-
-div.carousel img {
-    margin: auto;
-    width: auto;
+    padding: 0;
+    margin: 35px 0;
 }

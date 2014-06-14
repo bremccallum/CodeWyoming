@@ -107,7 +107,8 @@
         </header>
     <div class="container">
         <input class="todo" type="text" placeholder="What needs to be done?">
-        <ul>
+        <ul id="todoList">
+<!--
             <li>
                 <div>
                     <label>
@@ -150,21 +151,42 @@
                     <button class="delete" type="button"></button>
                 </div>
             </li>
+-->
         </ul>
     </div>
     
     <script src="/jquery/jquery-2.1.1.js"></script>
     <script>
         var lineThrough = function() {
-            var isChecked = $(this).find(':checked').length === 1;
-            $(this).parent().toggleClass('checked-off', isChecked);
+            $(this).parent().parent().toggleClass('checked-off');
         };
-        $('label').click(lineThrough);
+        //$('input[type=checkbox]').click(lineThrough);
         
         var deleteParent = function() {
             $(this).parent().parent().remove();
         };
-        $('.delete').click(deleteParent);
+        //$('.delete').click(deleteParent);
+        
+        var keyHandler = function(event) {
+            //check for enter key
+            if(event.which === 13) {
+                var userInput = $(this).val();
+                createToDo(userInput);
+                $(this).val(''); //clears input
+            }
+        }
+        
+        var createToDo = function(text) {
+            var todo = $('<li><div><label><input class="check" type="checkbox"><span class="checkbox"></span></label><span>' + text + '</span><button class="delete" type="button"></button></div></li>');
+            //Set up event listeners
+            todo.find('input[type=checkbox]').click(lineThrough);
+            todo.find('button').click(deleteParent);
+            //Insert the to-do
+            $('#todoList').append(text);
+        };
+        
+        $('input[type=text]').keypress(keyHandler); //defines keyHandler
+
     </script>
 </body>
 </html>
