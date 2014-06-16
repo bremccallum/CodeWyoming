@@ -25,9 +25,21 @@ h1 {
 h2 {
     font-weight: 700;
     letter-spacing: .025em;
+    text-transform: uppercase;
+}
+h2 > span {
+    font-weight: 300;
 }
 a:hover {
     text-decoration: none;
+}
+button {
+    width: 6em;
+    height: 3em;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: #ef4c22;
 }
 /* ---Header--- */
 
@@ -46,7 +58,8 @@ nav.navbar {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:active,
-.navbar-default .navbar-toggle:visited {
+.navbar-default .navbar-toggle:visited,
+.navbar-default .navbar-toggle:focus {
     background-color: #555;
 }
 .navbar-default .navbar-collapse {
@@ -57,6 +70,9 @@ nav.navbar {
 }
 .navbar-toggle {
     margin-right: 0;
+}
+button.navbar-toggle {
+    width: auto;
 }
 .navbar-brand {
     padding: 0;
@@ -103,6 +119,24 @@ button.btn-styles:hover {
 div.carousel {
     padding: 0;
 }
+.carousel-caption {
+    text-align: left;
+}
+.carousel-inner h2 {
+    color: #333;
+    text-shadow: none;
+    line-height: 33px;
+    font-size: 40px;
+}
+.carousel-inner h2 > span {
+    font-size: 30px;
+    color: #3a3a3a;
+}
+.carousel-inner p {
+    color: #3a3a3a;
+    text-shadow: none;
+    font-size: .9em;
+}
 .carousel-inner a.btn {
     background-color: #f04b11;
     color: #fff;
@@ -110,6 +144,14 @@ div.carousel {
 }
 .carousel-caption a.btn:hover {
     background-color: #d93400;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+    left: 15%;
+}
+.carousel-control .icon-next, 
+.carousel-control .glyphicon-chevron-right {
+    right: 15%;
 }
 
 /*---Sidebar---*/
@@ -141,13 +183,13 @@ div.carousel {
 
 /*---Tips---*/
 
-main > section.red-tips-row {
+main > section.red-tips {
     background-color: #ef4c22;  
     border-top: 10px solid #b22d22;
 }
 .tips article {
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 } 
 .tips article a {
     color: #b22d22;
@@ -156,6 +198,7 @@ main > section.red-tips-row {
     color: #fff;
 }
 article > div.tips-caption {
+    margin-top: 10px;
     margin-left: 80px;
 }
 .tips article .tips-caption > h2 {
@@ -167,7 +210,83 @@ article > div.tips-caption {
     margin-bottom: 0;
 }
 .tips article > img {
-    margin-top: 20px;
+    margin-top: 25px;
+}
+
+/*---Latest Section---*/
+
+.latest {
+    border-bottom: 1px solid #bbb;
+}
+.latest h2 {
+    margin-left: 13px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #bbb;
+}
+.content-bg {
+    margin-top: 2px;
+    padding: 10px 0 35px;
+    background-color: #f3f3f3;
+    border-top: 1px solid #bbb;
+}
+.latest article {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.latest article > h3,
+.latest article > p {
+    color: #777;
+}
+.latest article > img,
+.about-video img{
+    padding: 3px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+}
+
+/*---Welcome---*/
+
+.welcome {
+    margin-bottom: 35px;
+    margin-top: 35px;
+    padding-top: 0;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #bbb;
+}
+.welcome h2 {
+    color: #f04b11;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.welcome h3 {
+    margin-top: 5px;
+}
+.welcome h3,
+.welcome p {
+    color: #777;
+}
+
+/*---About/Video---*/
+
+.about-video article {
+    margin-bottom: 35px;
+}
+
+/*---Clients---*/
+
+.clients h2 {
+    font-weight: 300;
+    font-size: 20px;
+}
+.clients img {
+    padding: 15px
+}
+
+/*---Footer---*/
+
+footer {
+    background-color: #333;
+    color: #fff;
 }
 
 /*---Media Queries---*/
@@ -176,7 +295,20 @@ article > div.tips-caption {
     .carousel-caption > p {
         display: none;
     }
-    .carousel-caption > h2 {
-        
+    .carousel-caption > a {
+        display: none;
+    }
+    .carousel-inner {
+        position: relative;
+    }
+    .carousel-inner h2 {
+        position: absolute;
+        bottom: 45px;
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .carousel-inner h2 > span {
+        font-weight: 700;
+        font-size: 20px;
     }
 }
