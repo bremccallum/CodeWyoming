@@ -30,6 +30,9 @@ h2 {
 h2 > span {
     font-weight: 300;
 }
+a {
+    transition: all 0.3s ease 0s;
+}
 a:hover {
     text-decoration: none;
 }
@@ -40,6 +43,10 @@ button {
     border: none;
     border-radius: 3px;
     background-color: #ef4c22;
+    transition: all 0.3s ease 0s;  
+}
+button:hover {
+    background-color: #b22d22;
 }
 /* ---Header--- */
 
@@ -84,6 +91,9 @@ button.navbar-toggle {
 }
 .nav > li > a {
     padding: 15px 10px ;    
+}
+.nav > li:first-child a {
+    
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -192,6 +202,9 @@ main > section.red-tips {
     margin-bottom: 25px;
 } 
 .tips article a {
+    background: url(img/arrow-sm-red.png) no-repeat;
+    background-position: 0 50%;
+    padding-left: 8px;
     color: #b22d22;
 }
 .tips article a:hover {
@@ -255,11 +268,15 @@ article > div.tips-caption {
 }
 .welcome h2 {
     color: #f04b11;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 0;
 }
 .welcome h3 {
     margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
 }
 .welcome h3,
 .welcome p {
@@ -270,6 +287,17 @@ article > div.tips-caption {
 
 .about-video article {
     margin-bottom: 35px;
+}
+.video {
+    position: relative;
+}
+.video span img {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
 }
 
 /*---Clients---*/
@@ -288,10 +316,95 @@ footer {
     background-color: #333;
     color: #fff;
 }
-
+footer a {
+    color: #797979;
+}
+footer a:hover {
+    color: #ef4c22;
+}
+footer .row {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+footer nav h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+}
+footer nav ul,
+footer ul{
+    padding-left: 0;
+}
+footer nav ul li,
+footer ul li{
+    list-style-type: none;
+    font-size: .85em;
+    padding: 5px;
+}
+footer nav ul li {
+    padding-left: 15px;
+    background: url(img/arrow-sm.png) no-repeat;
+    background-position: 0 50% ;
+}
+.address ul li {
+    padding-left: 30px;
+    color: #797979;
+}
+.address ul li:first-child {
+    background: url(img/address.png) no-repeat;
+    background-position: 0 50%;
+}
+.address ul li:last-child {
+    background: url(img/phone.png) no-repeat;
+    background-position: 0 50%;
+}
+.footer-logo p a{
+    color: #ef4c22;
+}
+.footer-logo img {
+    margin-top: 15px;
+}
+.social {
+    margin-top: 25px;
+}
+.social ul li {
+    padding: 0;
+}
+.social ul li a {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    transition: none;
+}
+.social ul li:first-child a {
+    background: url(img/facebook.png);
+}
+.social ul li:first-child a:hover {
+    background-position: 0 36px;
+}
+.social ul li:nth-child(2) a {
+    background: url(img/twitter.png);
+}
+.social ul li:nth-child(2) a:hover {
+    background-position: 0 36px;
+}
+.social ul li:nth-child(3) a {
+    background: url(img/instagram.png);
+}
+.social ul li:nth-child(3) a:hover {
+    background-position: 0 36px;
+}
+.social ul li:last-child a {
+    background: url(img/mail.png);
+}
+.social ul li:last-child a:hover {
+    background-position: 0 36px;
+}
 /*---Media Queries---*/
 
 @media only screen and (max-width: 605px) {
+    /*---Carousel---*/
     .carousel-caption > p {
         display: none;
     }
@@ -310,5 +423,11 @@ footer {
     .carousel-inner h2 > span {
         font-weight: 700;
         font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .welcome h2 {
+        font-size: 48px;
     }
 }

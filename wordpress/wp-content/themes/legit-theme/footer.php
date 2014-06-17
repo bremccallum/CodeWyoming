@@ -58,7 +58,7 @@
                     </div>
                     <div class="footer-logo">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-red-sm.png" alt="">
                         </a>
                         <p>
                             <a href="">Crocoblock</a>

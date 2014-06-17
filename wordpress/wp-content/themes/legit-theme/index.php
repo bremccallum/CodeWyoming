@@ -172,7 +172,9 @@
                         <h2>Latest Video</h2>
                         <a href="">
                             <img class="img-responsive" src="<?php bloginfo("stylesheet_directory"); ?>/img/video.jpg" alt="">
-                            <span></span>
+                            <span>
+                                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/play.png" alt="">
+                            </span>
                         </a>
                     </article>
                 </div>
