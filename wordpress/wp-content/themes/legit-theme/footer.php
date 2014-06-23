@@ -42,20 +42,16 @@
                     </ul>
                 </nav>
                 <section class="contact-info col-sm-4">
-                    <div class="address">
-                        <ul>
-                            <li>
-                            9870 St Vincent Place,
-                            <br>
-                            Glasgow, DC 45 Fr 45.
-                            </li>
-                            <li>
-                                Telephone: +1 800 603 6035
-                                <br>
-                                FAX: +1 800 889 9898
-                            </li>
-                        </ul>
-                    </div>
+                    <address>
+                        9870 St Vincent Place,
+                        <br>
+                        Glasgow, DC 45 Fr 45.
+                    </address>
+                    <address>
+                        Telephone: +1 800 603 6035
+                        <br>
+                        FAX: +1 800 889 9898
+                    </address>
                     <div class="footer-logo">
                         <a href="">
                             <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-red-sm.png" alt="">
@@ -69,16 +65,18 @@
                     <div class="social">
                         <ul>
                            <!--Give a-href a background image/sprite-->
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
                         </ul>
                     </div>
                 </section>
             </div>
         </div>
     </footer>
+    
+    <?php wp_footer(); ?>
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>      
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>

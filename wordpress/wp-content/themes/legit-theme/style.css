@@ -6,7 +6,6 @@ Author URI:
 Description: 
 */
 
-@import "bs/bootstrap.css";
 
 /* ---Generic Syles--- */
 
@@ -36,16 +35,18 @@ a {
 a:hover {
     text-decoration: none;
 }
-button {
-    width: 6em;
-    height: 3em;
+button, .btn {
+    padding: 10px 20px;
     color: #fff;
     border: none;
     border-radius: 3px;
     background-color: #ef4c22;
-    transition: all 0.3s ease 0s;  
+    transition: all 0.3s ease;  
 }
-button:hover {
+button:hover,
+.btn:hover, 
+.btn:focus {
+    color: #fff;
     background-color: #b22d22;
 }
 /* ---Header--- */
@@ -68,6 +69,12 @@ nav.navbar {
 .navbar-default .navbar-toggle:visited,
 .navbar-default .navbar-toggle:focus {
     background-color: #555;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #f04b11;
 }
 .navbar-default .navbar-collapse {
     border: none;
@@ -92,13 +99,11 @@ button.navbar-toggle {
 .nav > li > a {
     padding: 15px 10px ;    
 }
-.nav > li:first-child a {
-    
-}
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
     background-color: transparent;
+    color: #777;
     color: #f04b11;
 }
 .open > .dropdown-menu {
@@ -110,6 +115,11 @@ button.navbar-toggle {
 }
 .dropdown-menu > li > a {
     padding: 10px;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: #555;
+    color: #fff;
 }
 button {
     border-color: #333;
@@ -168,10 +178,11 @@ div.carousel {
 
 .sidebar-buttons {
     padding: 0;
+    margin-left: 0;
 }
 .sidebar-buttons > a {
     display: block;
-    padding: 15px 0;
+/*    padding: 15px 0;*/
     margin: 0;
     text-align: center;
     text-transform: uppercase;
@@ -181,9 +192,6 @@ div.carousel {
 }
 .sidebar-buttons > a:hover {
     background-color: #707070;
-}
-.sidebar-buttons > img {
-    
 }
 .ideas-button {
     border-top: 1px solid #333;
@@ -291,7 +299,7 @@ article > div.tips-caption {
 .video {
     position: relative;
 }
-.video span img {
+.video img.play {
     position: absolute;
     top: 45%;
     left: 45%;
@@ -345,15 +353,15 @@ footer nav ul li {
     background: url(img/arrow-sm.png) no-repeat;
     background-position: 0 50% ;
 }
-.address ul li {
+address {
     padding-left: 30px;
     color: #797979;
 }
-.address ul li:first-child {
+address:first-child {
     background: url(img/address.png) no-repeat;
     background-position: 0 50%;
 }
-.address ul li:last-child {
+address:nth-child(2){
     background: url(img/phone.png) no-repeat;
     background-position: 0 50%;
 }
@@ -403,12 +411,12 @@ footer nav ul li {
 }
 /*---Media Queries---*/
 
-@media only screen and (max-width: 605px) {
+@media only screen and (max-width: 510px) {
     /*---Carousel---*/
     .carousel-caption > p {
         display: none;
     }
-    .carousel-caption > a {
+    .carousel-caption > button {
         display: none;
     }
     .carousel-inner {
@@ -421,13 +429,60 @@ footer nav ul li {
         line-height: 20px;
     }
     .carousel-inner h2 > span {
-        font-weight: 700;
         font-size: 20px;
     }
 }
-
+@media only screen and (max-width: 650px) {
+    .carousel-caption > p {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .sidebar-buttons > a {
+        padding: 15px;
+    }
+}
 @media only screen and (min-width: 768px) {
+    .sidebar-buttons > a {
+        max-height: 133px;
+        padding: 5px;
+    }
+    .sidebar-buttons > a > h2 {
+        font-size: 20px;
+    }
+    .carousel-caption {
+        left: 15%;
+        right: 15%;
+    }
+    .carousel-inner h2,
+    .carousel-inner h2 > span {
+        font-size: 25px;
+        line-height: 25px;
+    }
     .welcome h2 {
         font-size: 48px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .carousel-caption {
+        top: 35px;    
+    }
+    .sidebar-buttons > a {
+        max-height: 174px;
+        padding: 20px;
+    }
+    .sidebar-buttons > a > h2 {
+        font-size: 25px;
+    }
+    .carousel-inner h2,
+    .carousel-inner h2 > span {
+        font-size: 35px;
+        line-height: 30px;
+    }
+} 
+@media only screen and (min-width: 1200px) {
+    .sidebar-buttons > a {
+        max-height: 211px;
+        padding: 40px;
     }
 }
