@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Practice</title>
+    
+    <link rel="stylesheet" href="/06-24-14/jquery-learning.css">
+</head>
+<body>
+    <div id="main-stuff"></div>
+
+    <script src="/jquery/jquery-2.1.1.js"></script>
+    <script>
+        var pitches = [];
+                            $.get('http://engine.pitchengine.com/v1/pitches/', function(data) {
+            console.log(data); 
+            pitches = data.Values;
+            $.each(pitches, function (i, val) {
+                $('#main-stuff').append($('<p>').text(val.Headline));
+            });
+        });
+    </script>
+</body>
+</html>

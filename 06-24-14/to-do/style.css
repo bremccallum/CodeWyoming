@@ -1,0 +1,18 @@
+.to-do {
+    margin-top: 75px;
+}
+.panel-default {
+    border: none;
+}
+.glyphicon {
+    color: #dd3b26;
+}
+.glyphicon:hover {
+    color: #91231a;
+}
+.line-through {
+    text-decoration: line-through;
+}
+textarea {
+    margin-top: 15px;
+}

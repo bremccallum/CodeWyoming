@@ -1,0 +1,75 @@
+body {
+    font-family: 'Bree Serif', serif;
+    background-image: url(img/crossword.png);
+}
+
+/*---Breadcrumb---*/
+
+.breadcrumb {
+    background-color: #78c067;
+}
+.breadcrumb li a {
+    color: #fff;
+}
+.breadcrumb li a:hover {
+    text-decoration: none;
+    color: #666;
+}
+.breadcrumb li.active {
+    color: #666;
+}
+
+/*---List Styles---*/
+
+.strike {
+    text-decoration: line-through;
+    color: #333;
+}
+li {
+    border: none;
+}
+
+/*---Font Awesome Styles---*/
+
+.fa-plus {
+    padding: 0 10px;
+}
+.fa-minus-square {
+    color: #dd3b26;
+}
+.fa-minus-square:hover {
+    color: #91231a;
+}
+
+/*---Checkbox Styles---*/
+
+label input.check {
+    width: 15px;
+    display: none;
+}
+label.checkbox {
+    cursor: pointer;
+}
+span.checkbox {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    background-image: url(img/unchecked.jpg)
+}
+input:checked + span.checkbox {
+    background: url(img/checked.jpg);
+}
+
+/*---Form Styles---*/
+
+.form-group label {
+    font-size: 1.5em;
+}
+.add-new {
+    border: none;
+    background-color: #78c067;
+    color: #fff;
+}

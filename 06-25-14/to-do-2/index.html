@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ToDoCtrl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>To Do Angular - Round Two</title>
+
+   <!---Font--->
+   
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+      
+   <!---Stylesheets and Stuff--->
+   
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/06-25-14/to-do-2/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" ng-click="$event.preventDefault(); home();">To Do App</a>
+            </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" ng-click="$event.preventDefault(); addTask();" ><i class="fa fa-plus"></i>Add Stuff?</a></li>
+                    </ul>
+                </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+
+    <main class="container">
+       
+        <!---List Items--->
+
+        <div ng-class="{ hidden: addingtask }">
+            <ul class="list-group">
+
+                <li class="list-group-item" ng-class="{ strike: task.done}" ng-repeat="task in tasks">
+                        <input class="check" type="checkbox" ng-model="task.done">
+                        {{task.text}}
+                    <a href="#" class="remove pull-right" ng-click="$event.preventDefault(); removeItem($index);"><i class="fa fa-minus-square"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <!---Entry Form--->
+        
+        <div ng-class="{ hidden: !addingtask}">
+           <ol class="breadcrumb" ng-click="$event.preventDefault(); home();">
+                <li><a href="#">Home</a></li>
+                <li class="active">Data</li>
+            </ol>
+            
+            <form role="form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Tell us what you need to do:</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter those tasks here. Obviously." ng-model="newtasktext">
+                </div>
+                <button type="submit" class="add-new btn btn-default" ng-click="addNewTask(newtasktext);">Add New</button>
+            </form>
+        </div>
+        
+    </main>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+    <script src="//pe-refinery.azurewebsites.net/App/ref.js"></script>
+    <script src="app/module.js"></script>
+</body>
+
+</html>
