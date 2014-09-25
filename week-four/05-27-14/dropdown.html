@@ -14,20 +14,29 @@
             padding: 10px 20px;
             color: #f4ffc5;
         }
-        a.btn-style:hover {
+        a.btn-style:hover, a.btn-style:focus, a.btn-style:active {
             background-color: #062d2c;
             color: #f4ffc5;
         }
         ul.dropdown-menu {
-             background-color: #094949;
+            background-color: #094949;
         }
-        li.list-item a {
+        ul.dropdown-menu li a {
+            color: #f4ffc5;
+        }
+        li {
             font-family: 'Roboto Condensed', sans-serif;
+        }
+        li.list-item a, li a:hover {
             background-color: #094949;
             color: #f4ffc5;
         }
-        li a:hover {
-            color: #f4ffc5;
+        .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            background-color: #f4ffc5;
+            color: #094949
+        }
+        .dropdown-menu .divider {
+            background-color: #f4ffc5;
         }
     </style>
     
